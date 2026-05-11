@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEA – Noreste Argentino | ArgenTravel</title>
+  <meta name="description" content="Cataratas del Iguazú, Esteros del Iberá, ruinas jesuíticas y selva misionera."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="nea.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🌿 ArgenTravel</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span style="color:var(--oro)">☰</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Regiones</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="noa.html">🏔 NOA</a></li>
+            <li><a class="dropdown-item" href="nea.html">🌿 NEA</a></li>
+            <li><a class="dropdown-item" href="cuyo.html">🍇 Cuyo</a></li>
+            <li><a class="dropdown-item" href="centro.html">⛰ Centro</a></li>
+            <li><a class="dropdown-item" href="buenosaires.html">🏙 Buenos Aires</a></li>
+            <li><a class="dropdown-item" href="patagonia.html">❄ Patagonia</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+      <form class="d-flex search-form" action="#" method="get">
+        <input class="form-control" type="search" name="q" placeholder="Buscar provincia..." list="regiones-list"/>
+        <datalist id="regiones-list"><option value="Misiones"><option value="Corrientes"><option value="Entre Ríos"><option value="Chaco"><option value="Formosa"></datalist>
+        <button class="btn-search" type="submit">🔍</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<header>
+<div class="hero-region position-relative">
+  <div class="container position-relative" style="z-index:2;">
+    <span class="badge-region">🌿 Región NEA</span>
+    <h1 style="font-size:clamp(2.2rem,6vw,4.5rem);color:#fff;font-weight:800;line-height:1.1;">Noreste <span class="text-accent">Argentino</span></h1>
+    <p style="color:rgba(255,255,255,0.8);font-size:1.1rem;font-weight:300;max-width:550px;margin:1rem 0 1.5rem;">Cataratas del Iguazú, selvas subtropicales and the esteros más biodiversos del planeta.</p>
+    <div class="d-flex gap-3 flex-wrap">
+      <a href="#misiones" class="btn-custom">Explorar Provincias</a>
+      <a href="index.html" class="btn-back">← Volver al Inicio</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span></span></div>
+  <div class="hero-wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C79.86,122.9,159.93,121.13,239.5,108.97c38.74-5.91,77.2-14.73,115.11-25.54Z" class="shape-fill"></path>
+    </svg>
+  </div>
+</div>
+</header>
+
+<nav class="province-nav">
+  <div class="container">
+    <a href="#misiones">🌊 Misiones</a>
+    <a href="#corrientes">🐊 Corrientes</a>
+    <a href="#entrerios">♨ Entre Ríos</a>
+    <a href="#chaco">🌳 Chaco</a>
+    <a href="#formosa">🦅 Formosa</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="misiones" class="province-section">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">Misiones <span class="text-accent">–</span> Las Cataratas</h2>
+    <p class="provincia-sub">Patrimonio de la Humanidad: las majestuosas Cataratas del Iguazú</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Iguazu_Falls%2C_Argentina.jpg/800px-Iguazu_Falls%2C_Argentina.jpg" alt="Cataratas del Iguazú Misiones" class="province-img"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Iguazu_Falls%2C_Argentina.jpg/800px-Iguazu_Falls%2C_Argentina.jpg" alt="Selva Misionera" class="province-img-sm"/>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-6"><div class="info-card"><h5>🎯 Atracciones</h5><ul><li>Cataratas del Iguazú (UNESCO)</li><li>Ruinas Jesuíticas de San Ignacio</li><li>Saltos del Moconá</li><li>Parque Nacional Iguazú</li><li>Puerto Iguazú</li></ul></div></div>
+          <div class="col-md-6"><div class="info-card"><h5>🍽 Gastronomía</h5><ul><li>Chipá misionero</li><li>Surubí a la parrilla</li><li>Mate cocido con tortas</li><li>Reviro con yerba mate</li><li>Empanadas de mandioca</li></ul></div></div>
+          <div class="col-md-6"><div class="info-card"><h5>🧗 Actividades</h5><ul><li>Recorrido por las pasarelas</li><li>Garganta del Diablo</li><li>Kayak en el río Iguazú</li><li>Observación de aves (birding)</li></ul></div></div>
+          <div class="col-md-6"><div class="info-card"><h5>🌡 Clima</h5><table class="clima-table"><thead><tr><th>Estación</th><th>Temp.</th></tr></thead><tbody><tr><td>Verano</td><td>28–38 °C</td></tr><tr><td>Invierno</td><td>12–22 °C</td></tr><tr><td>Avión</td><td>Aeropuerto Internacional Iguazú</td></tr></tbody></table></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="corrientes" class="province-section">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">Corrientes <span class="text-accent">–</span> Esteros del Iberá</h2>
+    <p class="provincia-sub">El segundo humedal más grande del mundo y capital del carnaval argentino</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Esteros_del_Iber%C3%A1_2.jpg/800px-Esteros_del_Iber%C3%A1_2.jpg" alt="Esteros del Iberá Corrientes" class="province-img"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Esteros_del_Iber%C3%A1_2.jpg/800px-Esteros_del_Iber%C3%A1_2.jpg" alt="Natureza Ibera" class="province-img-sm"/>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-3"><div class="info-card"><h5>🎯 Atracciones</h5><ul><li>Esteros del Iberá</li><li>Parque Nacional Iberá</li><li>Carnaval de Corrientes</li><li>Ciudad colonial de Corrientes</li></ul></div></div>
+          <div class="col-md-3"><div class="info-card"><h5>🍽 Gastronomía</h5><ul><li>Surubí y dorado a la parrilla</li><li>Chipá guazú</li><li>Mbejú de almidón</li><li>Tereré con hierbas</li></ul></div></div>
+          <div class="col-md-3"><div class="info-card"><h5>🧗 Actividades</h5><ul><li>Safari fotográfico en lancha</li><li>Avistaje de yacarés y ciervos</li><li>Pesca deportiva</li><li>Kayak en lagunas</li></ul></div></div>
+          <div class="col-md-3"><div class="info-card"><h5>🌡 Clima</h5><table class="clima-table"><thead><tr><th>Estación</th><th>Temp.</th></tr></thead><tbody><tr><td>Verano</td><td>30–40 °C</td></tr><tr><td>Invierno</td><td>10–22 °C</td></tr></tbody></table></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="entrerios" class="province-section" style="background:#0a120a;">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">Entre Ríos <span class="text-accent">–</span> Entre dos Ríos</h2>
+    <p class="provincia-sub">Termas naturales, palmares centenarios y costas fluviales paradisíacas</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-4"><div class="info-card"><h5>🎯 Atracciones</h5><ul><li>Termas de Colón y Federación</li><li>Parque Nacional El Palmar</li><li>Delta del Paraná entrerriano</li><li>Gualeguaychú y su carnaval</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🍽 Gastronomía</h5><ul><li>Dorado al horno de barro</li><li>Pejerrey frito</li><li>Asado de tira entrerriano</li><li>Salames artesanales</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🧗 Actividades</h5><ul><li>Termalismo y balnearios</li><li>Ciclismo en el palmar</li><li>Pesca deportiva fluvial</li><li>Carnaval de Gualeguaychú</li></ul></div></div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/R%C3%ADo_Paran%C3%A1_desde_Rosario.jpg/800px-R%C3%ADo_Paran%C3%A1_desde_Rosario.jpg" alt="Río Paraná Entre Ríos" class="province-img"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="chaco" class="province-section">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">Chaco <span class="text-accent">–</span> El Gran Chaco</h2>
+    <p class="provincia-sub">El Impenetrable: reserva natural de bosques chaqueños únicos en el mundo</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Chaco_impenetrable_-_panoramio.jpg/800px-Chaco_impenetrable_-_panoramio.jpg" alt="Bosque Chaqueño" class="province-img"/>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-4"><div class="info-card"><h5>🎯 Atracciones</h5><ul><li>Parque Nacional El Impenetrable</li><li>Parque Nacional Chaco</li><li>Resistencia – ciudad de las esculturas</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🍽 Gastronomía</h5><ul><li>Asado de jabalí</li><li>Miel del monte chaqueño</li><li>Ñandú (suri) guisado</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🧗 Actividades</h5><ul><li>Safaris fotográficos</li><li>Avistaje de tapires y pumas</li><li>Pesca de dorado</li></ul></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="formosa" class="province-section" style="background:#0a120a;">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">Formosa <span class="text-accent">–</span> Bañado La Estrella</h2>
+    <p class="provincia-sub">Un ecosistema único de bañados, palmares y comunidades indígenas wichí</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-4"><div class="info-card"><h5>🎯 Atracciones</h5><ul><li>Bañado La Estrella</li><li>Parque Nacional Río Pilcomayo</li><li>Laguna Yema</li><li>Comunidades wichí</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🍽 Gastronomía</h5><ul><li>Sopa paraguaya</li><li>Locro formoseño</li><li>Pacú a la orilla del río</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🧗 Actividades</h5><ul><li>Safari en bañados</li><li>Turismo cultural indígena</li><li>Observación de aves acuáticas</li></ul></div></div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Aconcagua_desde_Plaza_Francia.jpg/800px-Aconcagua_desde_Plaza_Francia.jpg" alt="Bañado La Estrella Formosa" class="province-img"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p class="footer-text mb-1">🌿 <strong style="color:var(--oro)">ArgenTravel</strong> · Región NEA – Noreste Argentino</p>
+    <p class="footer-text">
+      <a href="index.html" class="footer-link">Inicio</a> ·
+      <a href="noa.html" class="footer-link">NOA</a> ·
+      <a href="cuyo.html" class="footer-link">Cuyo</a> ·
+      <a href="contacto.html" class="footer-link">Contacto</a> ·
+      <a href="https://www.argentina.travel" target="_blank" class="footer-link">argentina.travel</a>
+    </p>
+    <p class="footer-text mt-2">© 2026 ArgenTravel · Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cuyo – Mendoza, San Juan y San Luis | ArgenTravel</title>
+  <meta name="description" content="Explorá Cuyo: Aconcagua, Caminos del Vino, Valle de la Luna e Ischigualasto."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="cuyo.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🌿 ArgenTravel</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span style="color:var(--oro)">☰</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Regiones</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="noa.html">🏔 NOA</a></li>
+            <li><a class="dropdown-item" href="nea.html">🌿 NEA</a></li>
+            <li><a class="dropdown-item" href="cuyo.html">🍇 Cuyo</a></li>
+            <li><a class="dropdown-item" href="centro.html">⛰ Centro</a></li>
+            <li><a class="dropdown-item" href="buenosaires.html">🏙 Buenos Aires</a></li>
+            <li><a class="dropdown-item" href="patagonia.html">❄ Patagonia</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+      <form class="d-flex search-form" action="#" method="get">
+        <input class="form-control" type="search" name="q" placeholder="Buscar..." list="regiones-list"/>
+        <datalist id="regiones-list"><option value="Mendoza"><option value="San Juan"><option value="San Luis"><option value="Aconcagua"><option value="Ischigualasto"></datalist>
+        <button class="btn-search" type="submit">🔍</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<header>
+<div class="hero-region position-relative">
+  <div class="container position-relative" style="z-index:2;">
+    <span class="badge-region">🍇 Región Cuyo</span>
+    <h1 style="font-size:clamp(2.2rem,6vw,4.5rem);color:#fff;font-weight:800;line-height:1.1;">Cuyo <span class="text-accent">– Vinos y Cumbres</span></h1>
+    <p style="color:rgba(255,255,255,0.8);font-size:1.1rem;font-weight:300;max-width:550px;margin:1rem 0 1.5rem;">Viñedos al pie del Aconcagua, el desierto de la luna y las sierras puntanas.</p>
+    <div class="d-flex gap-3 flex-wrap">
+      <a href="#mendoza" class="btn-custom">Explorar Provincias</a>
+      <a href="index.html" class="btn-back">← Volver al Inicio</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span></span></div>
+  <div class="hero-wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C79.86,122.9,159.93,121.13,239.5,108.97c38.74-5.91,77.2-14.73,115.11-25.54Z" class="shape-fill"></path>
+    </svg>
+  </div>
+</div>
+</header>
+
+<nav class="province-nav">
+  <div class="container">
+    <a href="#mendoza">🍷 Mendoza</a>
+    <a href="#sanjuan">🌑 San Juan</a>
+    <a href="#sanluis">🏞 San Luis</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="mendoza" class="province-section">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">Mendoza <span class="text-accent">–</span> Capital del Vino</h2>
+    <p class="provincia-sub">El techo de América y los mejores Malbec del mundo</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Vineyards_in_Mendoza.jpg/800px-Vineyards_in_Mendoza.jpg" alt="Viñedos Mendoza" class="province-img"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Aconcagua_desde_Plaza_Francia.jpg/800px-Aconcagua_desde_Plaza_Francia.jpg" alt="Aconcagua" class="province-img-sm"/>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-6"><div class="info-card"><h5>🎯 Atracciones</h5><ul><li>Aconcagua (6.961 msnm)</li><li>Caminos del Vino</li><li>Cerro Champaquí</li><li>Parque Aconcagua</li><li>Puente del Inca</li></ul></div></div>
+          <div class="col-md-6"><div class="info-card"><h5>🍽 Gastronomía</h5><ul><li>Asado mendocino</li><li>Vino Malbec y Cabernet</li><li>Chivo al horno de barro</li><li>Empanadas cuyanas</li><li>Aceite de oliva artesanal</li></ul></div></div>
+          <div class="col-md-6"><div class="info-card"><h5>🧗 Actividades</h5><ul><li>Enoturismo en bodegas</li><li>Trekking y alpinismo</li><li>Rafting en río Mendoza</li><li>Ski en Las Leñas</li></ul></div></div>
+          <div class="col-md-6"><div class="info-card"><h5>🌡 Clima</h5><table class="clima-table"><thead><tr><th>Estación</th><th>Temp.</th></tr></thead><tbody><tr><td>Verano</td><td>28–38 °C</td></tr><tr><td>Invierno</td><td>2–15 °C</td></tr><tr><td>Nieve (ski)</td><td>Jun–Sep</td></tr></tbody></table></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="wine-feature">
+      <h4>🍷 Rutas del Vino Mendocino</h4>
+      <div class="row g-3 mt-1">
+        <div class="col-md-4"><strong style="color:var(--oro)">Luján de Cuyo</strong><br/><span style="color:#aaa;font-size:.85rem;">Cuna del Malbec argentino. Bodegas Catena, Achaval Ferrer, Renacer.</span></div>
+        <div class="col-md-4"><strong style="color:var(--oro)">Valle de Uco</strong><br/><span style="color:#aaa;font-size:.85rem;">Vinos de altura a 1.000–1.500 msnm. Paisajes de montaña únicos.</span></div>
+        <div class="col-md-4"><strong style="color:var(--oro)">Maipú</strong><br/><span style="color:#aaa;font-size:.85rem;">Turismo en bicicleta entre bodegas. El circuito más popular de Argentina.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sanjuan" class="province-section">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">San Juan <span class="text-accent">–</span> Valle de la Luna</h2>
+    <p class="provincia-sub">Ischigualasto: dinosaurios, formaciones lunares y astroturismo de primer nivel</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-6"><div class="info-card"><h5>🎯 Atracciones</h5><ul><li>Ischigualasto (Valle de la Luna)</li><li>Parque Nacional Talampaya (límite LR)</li><li>Difunta Correa</li><li>Calingasta y el Barreal</li><li>Dique Ullum</li></ul></div></div>
+          <div class="col-md-6"><div class="info-card"><h5>🍽 Gastronomía</h5><ul><li>Vinos sanjuaninos (Syrah)</li><li>Aceitunas y pasas de uva</li><li>Ajo artesanal del campo</li><li>Torrontés sanjuanino</li></ul></div></div>
+          <div class="col-md-6"><div class="info-card"><h5>🧗 Actividades</h5><ul><li>Recorrido paleontológico</li><li>Astroturismo nocturno</li><li>Sandboarding en dunas</li><li>Canotaje en Calingasta</li></ul></div></div>
+          <div class="col-md-6"><div class="info-card"><h5>🌡 Clima</h5><table class="clima-table"><thead><tr><th>Estación</th><th>Temp.</th></tr></thead><tbody><tr><td>Verano</td><td>32–42 °C</td></tr><tr><td>Invierno</td><td>5–18 °C</td></tr></tbody></table></div></div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Valle_de_la_Luna_%28Ischigualasto%29.jpg/800px-Valle_de_la_Luna_%28Ischigualasto%29.jpg" alt="Valle de la Luna San Juan" class="province-img"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Aconcagua_desde_Plaza_Francia.jpg/800px-Aconcagua_desde_Plaza_Francia.jpg" alt="Dique Ullum" class="province-img-sm"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sanluis" class="province-section" style="background:#130810;">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">San Luis <span class="text-accent">–</span> La Perla del West</h2>
+    <p class="provincia-sub">Serranías puntanas, termas y el circuito automovilístico de Potrero de los Funes</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Valle_de_Calamuchita.jpg/800px-Valle_de_Calamuchita.jpg" alt="Sierras San Luis" class="province-img"/>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-4"><div class="info-card"><h5>🎯 Atracciones</h5><ul><li>Potrero de los Funes</li><li>Merlo y su microclima</li><li>Parque Nacional Sierra de las Quijadas</li><li>Las Hornillas – reserva natural</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🍽 Gastronomía</h5><ul><li>Cabrito puntano</li><li>Empanadas de humita</li><li>Tortilla de cuero</li><li>Vino artesanal de altura</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🧗 Actividades</h5><ul><li>Trekking en serranías</li><li>Mountain bike</li><li>Gran Premio de automovilismo</li><li>Parapente en las sierras</li></ul></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p class="footer-text mb-1">🌿 <strong style="color:var(--oro)">ArgenTravel</strong> · Región Cuyo</p>
+    <p class="footer-text">
+      <a href="index.html" class="footer-link">Inicio</a> ·
+      <a href="noa.html" class="footer-link">NOA</a> ·
+      <a href="patagonia.html" class="footer-link">Patagonia</a> ·
+      <a href="contacto.html" class="footer-link">Contacto</a> ·
+      <a href="https://www.argentina.travel" target="_blank" class="footer-link">argentina.travel</a>
+    </p>
+    <p class="footer-text mt-2">© 2026 ArgenTravel</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

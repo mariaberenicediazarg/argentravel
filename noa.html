@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NOA – Noroeste Argentino | ArgenTravel</title>
+  <meta name="description" content="Explorá el Noroeste Argentino: Salta, Jujuy, Tucumán, Catamarca, La Rioja y Santiago del Estero."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="noa.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🌿 ArgenTravel</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span style="color:var(--oro)">☰</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Regiones</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="noa.html">🏔 NOA – Noroeste</a></li>
+            <li><a class="dropdown-item" href="nea.html">🌿 NEA – Noreste</a></li>
+            <li><a class="dropdown-item" href="cuyo.html">🍇 Cuyo</a></li>
+            <li><a class="dropdown-item" href="centro.html">⛰ Centro</a></li>
+            <li><a class="dropdown-item" href="buenosaires.html">🏙 Buenos Aires</a></li>
+            <li><a class="dropdown-item" href="patagonia.html">❄ Patagonia</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+      <form class="d-flex search-form" action="#" method="get">
+        <input class="form-control" type="search" name="q" placeholder="Buscar provincia..." list="regiones-list"/>
+        <datalist id="regiones-list">
+          <option value="Salta"><option value="Jujuy"><option value="Tucumán"><option value="Catamarca">
+          <option value="La Rioja"><option value="Santiago del Estero"><option value="Mendoza">
+          <option value="Córdoba"><option value="Buenos Aires"><option value="Neuquén">
+        </datalist>
+        <button class="btn-search" type="submit">🔍</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header>
+<div class="hero-region">
+  <div class="container position-relative" style="z-index:2;">
+    <p style="color:var(--oro);letter-spacing:4px;font-size:.82rem;font-weight:600;text-transform:uppercase;">Cerros, Cultura y Colores</p>
+    <span class="badge-region">🏔 Región NOA</span>
+    <h1 style="font-size:clamp(2.5rem,7vw,5rem);color:#fff;font-weight:800;line-height:1.1;">Noroeste <span class="text-accent">Argentino</span></h1>
+    <p style="color:rgba(255,255,255,0.8);font-size:1.15rem;font-weight:300;max-width:600px;margin:1rem 0 1.5rem;">Cerros de mil colores, desiertos de sal y culturas milenarias. El alma ancestral de la Argentina.</p>
+    <div class="d-flex gap-3 flex-wrap">
+      <a href="#salta" class="btn-custom">Explorar Provincias</a>
+      <a href="index.html" class="btn-back">← Volver al Inicio</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span></span></div>
+  <div class="hero-wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C79.86,122.9,159.93,121.13,239.5,108.97c38.74-5.91,77.2-14.73,115.11-25.54Z" class="shape-fill"></path>
+    </svg>
+  </div>
+</div>
+</header>
+
+<!-- NAV PROVINCIAS -->
+<nav class="province-nav" aria-label="Provincias NOA">
+  <div class="container">
+    <a href="#salta">🏔 Salta</a>
+    <a href="#jujuy">🌈 Jujuy</a>
+    <a href="#tucuman">🌿 Tucumán</a>
+    <a href="#catamarca">🪨 Catamarca</a>
+    <a href="#larioja">🏜 La Rioja</a>
+    <a href="#santiago">♨ Santiago del Estero</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- SALTA -->
+<section id="salta" class="province-section">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">Salta <span class="text-accent">–</span> La Linda</h2>
+    <p class="provincia-sub">Ciudad colonial, paisajes de quebrada y el legendario Tren a las Nubes</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Tren_a_las_nubes_-_viaducto_la_polvorilla.jpg/800px-Tren_a_las_nubes_-_viaducto_la_polvorilla.jpg" alt="Salta, Argentina" class="province-img"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Tren_a_las_nubes_-_viaducto_la_polvorilla.jpg/800px-Tren_a_las_nubes_-_viaducto_la_polvorilla.jpg" alt="Cafayate, Salta" class="province-img-sm"/>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="info-card">
+              <h5>🎯 Atracciones</h5>
+              <ul>
+                <li>Tren a las Nubes</li>
+                <li>Cafayate y la Quebrada</li>
+                <li>Cachi y el Valle Calchaquí</li>
+                <li>Parque Nacional Los Cardones</li>
+                <li>Ciudad histórica de Salta</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card">
+              <h5>🍽 Gastronomía</h5>
+              <ul>
+                <li>Locro salteño</li>
+                <li>Humita en chala</li>
+                <li>Empanadas norteñas</li>
+                <li>Vino torrontés de Cafayate</li>
+                <li>Tamales y chicha</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card">
+              <h5>🧗 Actividades</h5>
+              <ul>
+                <li>Trekking en la quebrada</li>
+                <li>Bodegas y enoturismo</li>
+                <li>Rafting en el río Juramento</li>
+                <li>Senderismo en Los Cardones</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card">
+              <h5>🌡 Clima y Cómo Llegar</h5>
+              <table class="clima-table">
+                <thead><tr><th>Temporada</th><th>Temperatura</th></tr></thead>
+                <tbody>
+                  <tr><td>Verano</td><td>22–34 °C</td></tr>
+                  <tr><td>Invierno</td><td>4–18 °C</td></tr>
+                  <tr><td>Avión</td><td>Vuelos directos desde EZE</td></tr>
+                  <tr><td>Ruta</td><td>RN 9 desde Jujuy</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JUJUY -->
+<section id="jujuy" class="province-section" style="background:#0d0d0d;">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">Jujuy <span class="text-accent">–</span> Colores del Norte</h2>
+    <p class="provincia-sub">Purmamarca, Hornocal y la Quebrada de Humahuaca (Patrimonio UNESCO)</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="info-card">
+              <h5>🎯 Atracciones</h5>
+              <ul>
+                <li>Cerro de los 7 Colores (Purmamarca)</li>
+                <li>Quebrada de Humahuaca</li>
+                <li>Serranía de Hornocal (14 colores)</li>
+                <li>Tilcara y sus Pucarás</li>
+                <li>Salinas Grandes</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card">
+              <h5>🍽 Gastronomía</h5>
+              <ul>
+                <li>Cordero a la llama</li>
+                <li>Quinoa y papas nativas</li>
+                <li>Api y chicha</li>
+                <li>Queso de cabra local</li>
+                <li>Tortillas al rescoldo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card">
+              <h5>🧗 Actividades</h5>
+              <ul>
+                <li>Senderismo en quebrada</li>
+                <li>Fotografía de paisajes</li>
+                <li>Turismo cultural indígena</li>
+                <li>Carnaval de Tilcara</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card">
+              <h5>🌡 Clima y Cómo Llegar</h5>
+              <table class="clima-table">
+                <thead><tr><th>Temporada</th><th>Temp.</th></tr></thead>
+                <tbody>
+                  <tr><td>Verano</td><td>20–30 °C</td></tr>
+                  <tr><td>Invierno</td><td>–5–15 °C</td></tr>
+                  <tr><td>Avión</td><td>Aeropuerto El Cadillal</td></tr>
+                  <tr><td>Ruta</td><td>RN 9 desde Salta</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Purmamarca_Cerro_de_los_Siete_Colores.jpg/800px-Purmamarca_Cerro_de_los_Siete_Colores.jpg" alt="Jujuy Cerros de Colores" class="province-img"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Purmamarca_Cerro_de_los_Siete_Colores.jpg/800px-Purmamarca_Cerro_de_los_Siete_Colores.jpg" alt="Salinas Grandes, Jujuy" class="province-img-sm"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TUCUMAN -->
+<section id="tucuman" class="province-section">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">Tucumán <span class="text-accent">–</span> El Jardín de la República</h2>
+    <p class="provincia-sub">Historia, naturaleza tropical y el valle más verde del NOA</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Aconcagua_desde_Plaza_Francia.jpg/800px-Aconcagua_desde_Plaza_Francia.jpg" alt="Tucumán Argentina" class="province-img"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Aconcagua_desde_Plaza_Francia.jpg/800px-Aconcagua_desde_Plaza_Francia.jpg" alt="Tafí del Valle" class="province-img-sm"/>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="info-card">
+              <h5>🎯 Atracciones</h5>
+              <ul>
+                <li>Casa Histórica de Tucumán</li>
+                <li>Tafí del Valle</li>
+                <li>Ruinas Quilmes</li>
+                <li>Cerro San Javier</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card">
+              <h5>🍽 Gastronomía</h5>
+              <ul>
+                <li>Empanadas tucumanas</li>
+                <li>Dulces de cayote</li>
+                <li>Caña de azúcar artesanal</li>
+                <li>Tortas fritas del norte</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card">
+              <h5>🧗 Actividades</h5>
+              <ul>
+                <li>Trekking Tafí del Valle</li>
+                <li>Turismo histórico colonial</li>
+                <li>Festival del Durazno</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card">
+              <h5>🌡 Clima</h5>
+              <table class="clima-table">
+                <thead><tr><th>Temporada</th><th>Temp.</th></tr></thead>
+                <tbody>
+                  <tr><td>Verano</td><td>25–35 °C</td></tr>
+                  <tr><td>Invierno</td><td>8–22 °C</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="catamarca" class="province-section" style="background:#0d0d0d;">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">Catamarca <span class="text-accent">–</span> Paisajes de Otro Mundo</h2>
+    <p class="provincia-sub">Volcanes, puna y el impresionante Campo de Piedra Pómez</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Campo_de_Piedra_Pomez_-_Catamarca.jpg/800px-Campo_de_Piedra_Pomez_-_Catamarca.jpg" alt="Catamarca paisaje volcánico" class="province-img"/>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-4"><div class="info-card"><h5>🎯 Atracciones</h5><ul><li>Campo de Piedra Pómez</li><li>Volcán Galán</li><li>Laguna Blanca</li><li>Antofagasta de la Sierra</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🍽 Gastronomía</h5><ul><li>Chivito a la parrilla</li><li>Mazamorra de maíz</li><li>Vino patero artesanal</li><li>Arrope de tuna</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🧗 Actividades</h5><ul><li>Travesías 4x4 en puna</li><li>Astroturismo</li><li>Fotografía volcánica</li></ul></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LA RIOJA -->
+<section id="larioja" class="province-section">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">La Rioja <span class="text-accent">–</span> Talampaya</h2>
+    <p class="provincia-sub">Cañones de roca roja y paisajes prehistóricos únicos en el mundo</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-4"><div class="info-card"><h5>🎯 Atracciones</h5><ul><li>Parque Nacional Talampaya</li><li>Valle de la Luna (límite con SJ)</li><li>Ciudad de La Rioja colonial</li><li>Chilecito y la Cableway</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🍽 Gastronomía</h5><ul><li>Locro riojano</li><li>Cabrito asado</li><li>Vinos de altura</li><li>Aceitunas y aceite local</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🌡 Clima</h5><table class="clima-table"><thead><tr><th>Estación</th><th>Temp.</th></tr></thead><tbody><tr><td>Verano</td><td>30–42 °C</td></tr><tr><td>Invierno</td><td>5–20 °C</td></tr></tbody></table></div></div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Parque_Nacional_Talampaya%2C_Argentina.jpg/800px-Parque_Nacional_Talampaya%2C_Argentina.jpg" alt="Talampaya La Rioja cañones" class="province-img"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANTIAGO DEL ESTERO -->
+<section id="santiago" class="province-section" style="background:#0d0d0d;">
+  <div class="container">
+    <span class="section-label">Provincia</span>
+    <h2 class="provincia-title">Santiago del Estero <span class="text-accent">–</span> La Madre de Ciudades</h2>
+    <p class="provincia-sub">La ciudad más antigua de Argentina y las famosas Termas de Río Hondo</p>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Aconcagua_desde_Plaza_Francia.jpg/800px-Aconcagua_desde_Plaza_Francia.jpg" alt="Santiago del Estero" class="province-img"/>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-4"><div class="info-card"><h5>🎯 Atracciones</h5><ul><li>Termas de Río Hondo</li><li>Plaza Libertad histórica</li><li>Parque de la Aguada</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🍽 Gastronomía</h5><ul><li>Asado santiagueño</li><li>Chanfaina</li><li>Pan casero de leña</li></ul></div></div>
+          <div class="col-md-4"><div class="info-card"><h5>🧗 Actividades</h5><ul><li>Termalismo y spa</li><li>Pesca deportiva</li><li>Folklore y chacarera</li></ul></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p class="footer-text mb-1">🌿 <strong style="color:var(--oro)">ArgenTravel</strong> · Región NOA – Noroeste Argentino</p>
+    <p class="footer-text">
+      <a href="index.html" class="footer-link">Inicio</a> ·
+      <a href="nea.html" class="footer-link">NEA</a> ·
+      <a href="cuyo.html" class="footer-link">Cuyo</a> ·
+      <a href="contacto.html" class="footer-link">Contacto</a> ·
+      <a href="https://www.argentina.travel" target="_blank" class="footer-link">argentina.travel</a>
+    </p>
+    <p class="footer-text mt-2">© 2026 ArgenTravel · Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
